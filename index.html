@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini-boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header class="bg-red-400 fixed w-full">
+    <nav class="flex items-center justify-between w-4/5 m-auto h-20">
+      <div id="logo">LOGO</div>
+      <ul class="flex items-center gap-3 text-white">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Team</li>
+        <li class="panier">Panier<p class="counter">0 article - 0,00€</p></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sidebar fixed text-white w-[0px] duration-300 h-screen bg-red-400 absolute">
+    <div class="panier-items"></div>
+  </div>
+  <main>
+    <div class="products flex items-center justify-center gap-3 flex-wrap"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
